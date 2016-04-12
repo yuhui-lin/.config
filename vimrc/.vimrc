@@ -63,6 +63,16 @@ endfunction
     call SourceIfExists("~/.vimrc.before")
 " }
 
+""""""""""""""""""""""""""""
+" added by Yuhui
+""""""""""""""""""""""""""""
+" Use local vimrc folder if available {
+    call SourceIfExists("~/.dotfiles/vimrc.local/before.vim")
+" }
+""""""""""""""""""""""""""""
+" added by Yuhui
+""""""""""""""""""""""""""""
+
 " Don't reset twice on reloading - 'compatible' has SO many side effects.
 if !exists('s:loaded_my_vimrc')
   call SourceDirectory('~/.vim/quirks')
@@ -91,6 +101,19 @@ call SourceIfExists("~/.vim/colors.vim")
 " Use local vimrc if available {
     call SourceIfExists("~/.vimrc.local")
 " }
+
+
+""""""""""""""""""""""""""""
+" added by Yuhui
+""""""""""""""""""""""""""""
+" Use local vimrc folder if available {
+    call SourceIfExists("~/.dotfiles/vimrc.local/local.vim")
+" }
+""""""""""""""""""""""""""""
+" added by Yuhui
+""""""""""""""""""""""""""""
+
+
 
 " FreeBSD-specific terminal fixes
 if FREEBSD()
