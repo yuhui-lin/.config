@@ -1,0 +1,1 @@
+contrib/easymotion.vim

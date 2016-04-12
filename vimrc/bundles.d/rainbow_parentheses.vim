@@ -1,0 +1,1 @@
+contrib/rainbow_parentheses.vim

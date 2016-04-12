@@ -1,0 +1,1 @@
+contrib/vim-tmux-navigator.vim
