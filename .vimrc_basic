@@ -1,0 +1,2 @@
+"point to my vimrc
+source ~/.dotfiles/vim/vimrc_basic.vim

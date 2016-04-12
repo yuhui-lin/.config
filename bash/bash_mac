@@ -1,0 +1,30 @@
+######################################
+### Mac only - .bash_profile
+######################################
+
+### import the general config
+# it can be overwritten.
+source ~/.dotfiles/bash/bash_general
+
+###only for mbp_start
+# MacPorts Installer addition on 2014-09-11_at_11:23:56: adding an appropriate PATH variable for use with MacPorts.
+#export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+#export PATH
+###only for mbp_end
+
+
+### mac colorful ls result
+export CLICOLOR=1
+export LSCOLORS=HxFxBxDxCxegedabagacad
+
+### mac alias
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias v='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+###set system editor variable
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim

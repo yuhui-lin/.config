@@ -1,0 +1,9 @@
+# pack-refs with: peeled fully-peeled 
+77116ce15030eb607eab53b0781dd651402bc553 refs/remotes/origin/PlugOnLoad
+c286a252820f1ba3d9d824f74ececf749367750d refs/remotes/origin/PlugOnLoad-deopleteback
+04322192b5ef92778fd6ed63921209b1c3bc9cea refs/remotes/origin/bundles-rework
+e153705fc9087e9969f52a83a22321bc4674fce6 refs/remotes/origin/clean
+9966c0d5e07b35e08bebb3e98f3f5ff2a2360858 refs/remotes/origin/master
+5f9466ec140600ab0f5d5d5fc0a8648a931186cd refs/remotes/origin/plug
+3792e66b44d771eb4b6c909abd75d9495e412612 refs/remotes/origin/sans-ycm
+2b0f83ecd805963c63c94791b5f85b41196da280 refs/remotes/origin/vim-virtualenv

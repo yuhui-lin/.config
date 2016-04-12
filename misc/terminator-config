@@ -1,0 +1,35 @@
+[global_config]
+  title_transmit_bg_color = "#00c845"
+[keybindings]
+  cycle_prev = <Primary>Page_Up
+  switch_to_tab_10 = <Alt>0
+  new_tab = <Alt>t
+  next_tab = <Primary>Tab
+  switch_to_tab_5 = <Alt>5
+  prev_tab = <Primary>grave
+  switch_to_tab_4 = <Alt>4
+  close_term = <Alt>w
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_1 = <Alt>1
+  cycle_next = <Primary>Page_Down
+  copy = <Alt>c
+  paste = <Alt>v
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Monaco 20
+    background_image = None
+    foreground_color = "#00ff00"
+    show_titlebar = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
