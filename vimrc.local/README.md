@@ -72,9 +72,11 @@ modified by Yuhui
 ```
 - ``.vimrc``: call function to source all local .vim files
 - ``settings``, ``bundles.settings``, ``bundles.d``: add ``local/`` folder under these directories. ``local/`` folders contain my .vim config files which can be used in the same way as ``contrib/`` community settings.
+- ``.gitignore``: comment out three /*.vim to upload my symbolic links
 
 
 # Potential plugins
+- tagbar.vim: some errors.
 - ag.vim: file search plugin which is better than grep.
 - clang*.vim, vim-syntax-extra.vim: for c, cpp
 - coffeescript.vim: tags
