@@ -1,5 +1,7 @@
 " My supplement vim configurations to tony/vim-config-framework.
 
+" source local plugins config
+source ~/.dotfiles/vimrc.local/plugins.vim
 
 
 "#########################################

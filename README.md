@@ -1,10 +1,13 @@
 This repository keeps all my dotfiles.
 
 # Install
+
 ```bash
-git clone https://github.com/yuhui-lin/dotfiles.git
-mv ~/dotfiles ~/.dotfiles
+git clone https://github.com/yuhui-lin/.dotfiles.git ~/
 cp ~/.dotfiles/.vimrc ~/.vimrc
+
+# backup .vim
+mv .vim .vim-backup
 ln -s ~/.dotfiles/vimrc/ ~/.vim
 # Mac
 cp ~/.dotfiles/.bash_profile ~/.bash_profile
@@ -16,7 +19,7 @@ cp ~/.dotfiles/.vimrc.basic ~/.vimrc
 ```
 
 # Modules
-``vimrc/``: This is a fork from [tony/vim-config-framework](https://github.com/tony/vim-config-framework). I try not to modify the original configuration. Instead, symbolic links and local vimrc are used to add my own configurations.
+``vimrc/``: This is a fork from [tony/vim-config-framework](https://github.com/tony/vim-config-framework). I try not to modify the original configuration. Instead, symbolic links and local vimrc are used to add my own configurations. The .git folder of ``vimrc/`` is kept elsewhere to update it in the future.
 
 ``vimrc.local/``: My supplement vim configuration files.
 
