@@ -3,7 +3,7 @@ This repository keeps all my dotfiles.
 # Install
 
 ```bash
-git clone https://github.com/yuhui-lin/.dotfiles.git ~/
+git clone https://github.com/yuhui-lin/.dotfiles.git ~/.dotfiles
 cp ~/.dotfiles/.vimrc ~/.vimrc
 
 # backup .vim
