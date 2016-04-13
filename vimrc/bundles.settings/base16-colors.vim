@@ -1,1 +1,0 @@
-contrib/base16-colors.vim

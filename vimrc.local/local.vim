@@ -23,26 +23,19 @@ endif
 "set wildignorecase
 
 
-" MAC OSX {
-    if OSX()
-          """mac font
-          "it's not system font, but it fits best
-          "other font: lucida console, monaco, Consolas
-          set guifont=Menlo:h22 
-          set linespace=4
-    endif
-" }
-" windows  {
-    if WINDOWS()
-          set guifont=Consolas:h22
-    endif
-" }
-" linux {
-    if LINUX()
-          set guifont=Monaco:h22
-    endif
-" }
 
+""""""""""""""""""""""""""""""""""
+" colorscheme
+" overwrite contrib/color.vim
+" always use molokai, even in terminal
+if ColorSchemeExists('molokai')
+  colorscheme molokai
+  " molokai: for 256 colors
+  let g:rehash256 = 1
+else
+  colorscheme desert
+endif
+""""""""""""""""""""""""""""""""""
 
 
 "#########################################
@@ -64,4 +57,30 @@ endif
 "noremap <F5> <ESC>:w<CR>:silent execute "!python %"<CR><CR>
 "autocmd FileType python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 autocmd FileType python nnoremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; python' shellescape(@%, 1)<cr>
+
+
+
+
+"#########################################
+" system specific settings, keep it at the end of local.vim
+"#########################################
+" MAC OSX {
+    if OSX()
+          """mac font
+          "it's not system font, but it fits best
+          "other font: lucida console, monaco, Consolas
+          set guifont=Menlo:h22 
+          set linespace=4
+    endif
+" }
+" windows  {
+    if WINDOWS()
+          set guifont=Consolas:h22
+    endif
+" }
+" linux {
+    if LINUX()
+          set guifont=Monaco:h22
+    endif
+" }
 
