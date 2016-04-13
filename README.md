@@ -29,3 +29,7 @@ cp ~/.dotfiles/.vimrc.basic ~/.vimrc
 
 ``misc/``: miscellaneous stuff.
 
+# Prerequisite
+- github-markdown parser OR commanMark python implement
+- flake8: pip install flake8
+- rst2html: see Note_rst

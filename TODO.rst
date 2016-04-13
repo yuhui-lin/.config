@@ -1,0 +1,14 @@
+- startify.vim:provides a start screen for Vim. only config, no import.
+- tagtar.vim was removed because of error.
+- finish key mapping table
+- [o] figure out how to add local pluging settings, like markdown.local
+- rst open error: E403: syntax sync: line continuations pattern specified
+  twice
+- rst config, return add list, [o]first
+- delimiter.vim, ctrp jump out of parenthesis?
+- is rainbow enabled??
+- neocomplete + jedi improve, C-N?, autoshow?, tab choose?
+- terminal scheme? change molaka?
+- map return to unfold za in py and md
+- autopep8: max line length? for comment not work? add option?
+- c-m maximize windows
