@@ -1,1 +1,0 @@
-contrib/jedi.vim

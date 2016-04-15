@@ -8,6 +8,16 @@ This is my supplement vim configurations to tony/vim-config-framework.
 ``vimrc.basic``: Minimalist vimrc without any plugins.
 
 
+# Features
+## Share clipboard with operating system
+almost every operation in vim: d, y....
+except s and c.
+will copy text to system clipboard.
+
+when paste to vim, use
+``<leader>4 + v + p``
+or 
+``<leader>4 + v + s/c + cmd-v``
 # My key mapping
 For original keymappings, please refre to [Tony/Keymappings](https://github.com/tony/vim-config-framework/tree/master/settings/contrib).
 
@@ -35,13 +45,12 @@ For original keymappings, please refre to [Tony/Keymappings](https://github.com/
 |tagbar or unite)	 
 |ctrl-x||	Explore files from CWD
 |ctrl-c||	Delete buffer (close file) go to last file a.k.a :BB.
-|;[||	Cycle backwards through buffers (previous)
-|;]||	Cycle forward through buffers (next)
+|<leader>[||	Cycle backwards through buffers (previous)
+|<leader>]||	Cycle forward through buffers (next)
 |ctrl-i||	CtrlP prompt: doesn't work, move to next char in insert mode
 |ctrl-_	||tcomment: main toggle
 |gc(motion)||	tcomment: toggle
 |gcc	||tcomment: toggle current line
-|ctrl-p	||insert mode: pass one char
 |f	||normal mode: =<C-d>
 |t	||normal mode: =<C-u>
 |J	||easymotion: move line
@@ -53,15 +62,27 @@ For original keymappings, please refre to [Tony/Keymappings](https://github.com/
 |c-g||	neocomplte undo complte
 |c-l	||neocomplte complte common string
 |F5 for .md||	preview md file by Chrome plugin
-|za||	toggle one line folding
+|za|all|vim: toggle one line folding
+|``<CR> on fold line``|rst, md, py|mapping: toggle one line folding
+|<leader>o |.rst	|toggle all folding
+|<leader>o and c |.md	|open and close all folding
+|``<leader>o`` |all |toggle or open all foldings |
+|``<leader>c`` |all |close all foldings |
 |C-e for .rst	||rst key
-|<C-E><Space>a .rst	||Toggle all folding
 |<C-E>s0~6 .rst	||create title
 |<C-E>cdd .rst	||Insert Current Date
 |<C-E>2hh or F5 .rst	||Convert to html and browse current file
 |F5 inside Ctrlp	||get new cache, wait for seconds
-|<leader>o .rst	||toggle all folding
-|<leader>o and c .md	||open and close all folding
+|``<leader>y`` |python |yaph format to pep8 style |
+|``C-Space`` |python |jedi: completion |
+|``<leader>d`` |python |jedi: go to definition |
+|``<leader><leader>r`` |python |jedi: rename |
+|``<leader>4, v, p`` |all |paste on vim |
+|``<S-Tab>`` |all |insert mode: jump one character |
+|``f, F, ;`` |all |sneak: qick move |
+| | | |
+| | | |
+| | | |
 
 # My modifications to tony/vim-config-framework
 Any modifications will be surrounded by 

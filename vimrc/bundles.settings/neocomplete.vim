@@ -1,1 +1,0 @@
-contrib/neocomplete.vim

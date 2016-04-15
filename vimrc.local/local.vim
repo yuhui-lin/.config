@@ -32,25 +32,45 @@ if ColorSchemeExists('molokai')
   colorscheme molokai
   " molokai: for 256 colors
   let g:rehash256 = 1
+
+  " make visual and comments more obvious
+  if has('gui_running')
+    " guibg not guifg
+    " hi Visual guibg=#585858
+    hi Visual guibg=#00875f
+    hi VisualNOS guibg=#00875f
+    " hi Comment guifg=#767676
+    hi Comment guifg=#808080
+  else
+    " hi Visual ctermbg=240
+    hi Visual ctermbg=29
+    " hi Comment ctermfg=243
+    hi Comment ctermfg=244
+  endif
+
 else
   colorscheme desert
 endif
+
+" overwrite color.vim, I don't want transparent.
+set transparency=0        " set transparent window
 """"""""""""""""""""""""""""""""""
 
 
 "#########################################
-" autocmd config
+" autocmd config & global keymapping
 "#########################################
-"SuperRetab: change leading whitespaces to tab
-:command! -nargs=1 -range=% SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/ge
+" SuperRetab: change leading whitespaces to tab
+" :command! -nargs=1 -range=% SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/ge
 "change spaces to tab, format py when update, and remove ending ^M
 " don't use tab in python !! follow pep8!
 " use :retab command to convert existing tab
+autocmd FileType python nnoremap <silent> <leader>y :0,$!yapf --style pep8<Cr>
 :augroup autoFormatGroup
 " :    autocmd BufWrite *.py :SuperRetab 4
 " :    autocmd BufWrite *.py :retab
 :    autocmd BufWritePre *.py :%s/\r\+$//e
-:    autocmd BufWritePost *.py :Autopep8
+" :    autocmd BufWritePost *.py :Autopep8
 :augroup END
 
 "run python by F5
@@ -58,7 +78,45 @@ endif
 "autocmd FileType python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 autocmd FileType python nnoremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; python' shellescape(@%, 1)<cr>
 
+" press f to toggle the current fold open/closed. However, if the cursor is not in a fold, move to the next line
+" autocmd FileType python,markdown nnoremap <silent> <CR> @=(foldlevel('.')?'za':"<CR>")<CR>
+autocmd FileType python,markdown nnoremap <silent> <CR> @=(foldlevel('.')?'za':'j')<CR>
+" autocmd FileType python,markdown nnoremap <CR> za
 
+
+" "maximize a windows
+map <C-m> <C-W>_
+
+
+" unmap these in keymapping.vim
+" to enable vim-sneak ; operation
+" use <leader>[] instead
+:unmap ;[
+" :unmap! ;[
+:unmap ;]
+" :unmap! ;]
+
+" "move to next char in insert mode
+" cannot use c-;
+" don't use C-i, it'll cause tab problem
+inoremap <S-Tab> <ESC>la
+" inoremap <C-'> <C-o>a
+
+
+" overwrite keymapping.vim, don't put into blackhole
+" use <leader>4+v+s to paste
+" nnoremap d d
+:unmap d
+
+
+" Don't copy the replacement part to system clipboard.
+nnoremap c "_c
+nnoremap cc "_cc
+nnoremap C "_C
+nnoremap s "_s
+nnoremap ss "_ss
+" cc and S are synonyms
+nnoremap S "_S
 
 
 "#########################################
@@ -84,3 +142,7 @@ autocmd FileType python nnoremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; python'
     endif
 " }
 
+
+" source local test config
+" only for testing, should be emmpty otherwise.
+source ~/.dotfiles/vimrc.local/test.vim
