@@ -31,6 +31,7 @@ todo
 - [o] finish key mapping table
 
 - remove warnings of python save.
+- hl pymode folding font
 
 colorscheme
 ===========

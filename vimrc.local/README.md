@@ -80,7 +80,7 @@ For original keymappings, please refre to [Tony/Keymappings](https://github.com/
 |``<leader>4, v, p`` |all |paste on vim |
 |``<S-Tab>`` |all |insert mode: jump one character |
 |``f, F, ;`` |all |sneak: qick move |
-| | | |
+|``<leader>m`` |all |maximize current windows, not <C-m> |
 | | | |
 | | | |
 

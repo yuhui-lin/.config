@@ -39,13 +39,23 @@ if ColorSchemeExists('molokai')
     " hi Visual guibg=#585858
     hi Visual guibg=#00875f
     hi VisualNOS guibg=#00875f
+
     " hi Comment guifg=#767676
     hi Comment guifg=#808080
+
+    "#5f87af or #5f87d7
+    hi FoldColumn      guifg=#5f87d7 guibg=#000000
+    hi Folded          guifg=#5f87d7 guibg=#000000
   else
     " hi Visual ctermbg=240
     hi Visual ctermbg=29
+
     " hi Comment ctermfg=243
     hi Comment ctermfg=244
+
+    " 67 or 68
+    hi FoldColumn      ctermfg=68  ctermbg=16
+    hi Folded          ctermfg=68  ctermbg=16
   endif
 
 else
@@ -81,11 +91,14 @@ autocmd FileType python nnoremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; python'
 " press f to toggle the current fold open/closed. However, if the cursor is not in a fold, move to the next line
 " autocmd FileType python,markdown nnoremap <silent> <CR> @=(foldlevel('.')?'za':"<CR>")<CR>
 autocmd FileType python,markdown nnoremap <silent> <CR> @=(foldlevel('.')?'za':'j')<CR>
+" autocmd FileType python,markdown nnoremap <silent> <Enter> @=(foldlevel('.')?'za':'j')<CR>
 " autocmd FileType python,markdown nnoremap <CR> za
 
 
-" "maximize a windows
-map <C-m> <C-W>_
+" maximize a windows
+" when <CR> is mapped for folding, <C-m> serves as <CR>
+" cannot use <C-m> anymore.
+nnoremap <leader>m <C-W>_
 
 
 " unmap these in keymapping.vim
@@ -113,10 +126,10 @@ inoremap <S-Tab> <ESC>la
 nnoremap c "_c
 nnoremap cc "_cc
 nnoremap C "_C
-nnoremap s "_s
-nnoremap ss "_ss
-" cc and S are synonyms
-nnoremap S "_S
+" nnoremap s "_s
+" nnoremap ss "_ss
+" " cc and S are synonyms
+" nnoremap S "_S
 
 
 "#########################################

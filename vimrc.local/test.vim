@@ -2,3 +2,4 @@
 " nnoremap <CR> za
 " nnoremap <silent> <CR> @=(foldlevel('.')?'za':"\<CR>")<CR>
 " autocmd FileType python,markdown nnoremap <CR> za
+" nnoremap <C-m> <C-W>_
