@@ -1,1 +1,0 @@
-contrib/pymode.vim

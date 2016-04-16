@@ -8,9 +8,10 @@ if executable('python')
         \   'for' : ['python', 'python3', 'djangohtml'],
         \ }
 
-  Plug 'nvie/vim-flake8', {
-        \   'for' : ['python', 'python3', 'djangohtml'],
-        \ }
+  " " use pymode default checkers
+  " Plug 'nvie/vim-flake8', {
+  "       \   'for' : ['python', 'python3', 'djangohtml'],
+  "       \ }
 
   " Plug 'google/yapf', {
   "       \ 'autoload' : {

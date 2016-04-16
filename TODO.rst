@@ -32,6 +32,8 @@ todo
 
 - remove warnings of python save.
 - hl pymode folding font
+- [o] remove vim-flake8
+- [o] fix py string to long problem, can only do this manually
 
 colorscheme
 ===========

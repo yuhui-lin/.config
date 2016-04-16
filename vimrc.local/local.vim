@@ -63,7 +63,9 @@ else
 endif
 
 " overwrite color.vim, I don't want transparent.
-set transparency=0        " set transparent window
+if has('gui_running')
+  set transparency=0        " set transparent window
+endif
 """"""""""""""""""""""""""""""""""
 
 
@@ -87,6 +89,7 @@ autocmd FileType python nnoremap <silent> <leader>y :0,$!yapf --style pep8<Cr>
 "noremap <F5> <ESC>:w<CR>:silent execute "!python %"<CR><CR>
 "autocmd FileType python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 autocmd FileType python nnoremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; python' shellescape(@%, 1)<cr>
+
 
 " press f to toggle the current fold open/closed. However, if the cursor is not in a fold, move to the next line
 " autocmd FileType python,markdown nnoremap <silent> <CR> @=(foldlevel('.')?'za':"<CR>")<CR>
