@@ -34,6 +34,10 @@ todo
 - hl pymode folding font
 - [o] remove vim-flake8
 - [o] fix py string to long problem, can only do this manually
+- don't use editorconfig/editorconfig-vim, it needs to install
+  editorconfig-core-c binary. use dahu/EditorConfig which in VimL but in
+  alpha version, not stable. add my EditorConfig under vinrc.local.
+- clojure: 
 
 colorscheme
 ===========
