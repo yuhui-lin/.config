@@ -53,5 +53,17 @@ let g:autopep8_max_line_length=79
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+" dahu/EditorConfig
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" autocmd BufReadPre *.py :EditorConfig '~/.dotfiles/vimrc.local/.editorconfig'
+" autocmd FileType python,clojure,vim :EditorConfig g:VIMRC_LOCAL 
+" autocmd FileType python,clojure,vim :EditorConfig /Users/yuhuilin/.dotfiles/vimrc.local
+autocmd FileType python,clojure,vim execute ":EditorConfig ".g:VIMRC_LOCAL 
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""

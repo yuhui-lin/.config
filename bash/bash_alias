@@ -28,3 +28,7 @@ alias os='head -n 1 /etc/issue'
 alias v='vim'
 alias ex='exit'
 alias td='tcpdump -nXS'
+
+# run clojure, act like python
+# only allaw one version under ~/Downloads
+alias clj='java -cp ~/Downloads/clojure-?.?.?/clojure-?.?.?.jar clojure.main'

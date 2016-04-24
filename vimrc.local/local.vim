@@ -1,5 +1,9 @@
 " My supplement vim configurations to tony/vim-config-framework.
 
+" my global variables
+let g:VIMRC_LOCAL   = $HOME.'/.dotfiles/vimrc.local'
+
+
 " source local plugins config
 source ~/.dotfiles/vimrc.local/plugins.vim
 
@@ -82,7 +86,6 @@ autocmd FileType python nnoremap <silent> <leader>y :0,$!yapf --style pep8<Cr>
 " :    autocmd BufWrite *.py :SuperRetab 4
 " :    autocmd BufWrite *.py :retab
 :    autocmd BufWritePre *.py :%s/\r\+$//e
-:   autocmd BufReadPre *.py :EditorConfig '~/.dotfiles/vimrc.local/.editorconfig'
 " :    autocmd BufWritePost *.py :Autopep8
 :augroup END
 

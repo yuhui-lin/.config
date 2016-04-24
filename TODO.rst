@@ -36,8 +36,10 @@ todo
 - [o] fix py string to long problem, can only do this manually
 - don't use editorconfig/editorconfig-vim, it needs to install
   editorconfig-core-c binary. use dahu/EditorConfig which in VimL but in
-  alpha version, not stable. add my EditorConfig under vinrc.local.
-- clojure: 
+  alpha version, not stable. add my EditorConfig under vinrc.local. set
+  autocmd to py,clj,vim
+- clojure: split rainbow, set clj <F5> to run clojure single file. use
+  fireplace.vim plugin.
 
 colorscheme
 ===========

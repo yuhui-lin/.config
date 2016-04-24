@@ -9,8 +9,5 @@ if executable('java')
     "   \ 'for': ['clojure']
     "   \ }
 
-    Plug 'luochen1990/rainbow', {
-      \ 'for': ['clojure']
-      \ }
 endif
 
