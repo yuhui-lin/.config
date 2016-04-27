@@ -20,7 +20,7 @@ autocmd FileType rst map <leader>o <C-E><Space>a
 
 " disable stupid indent
 " autocmd FileType rst :setl noai nocin nosi inde=
-autocmd FileType rst :setl nocin nosi inde=
+autocmd FileType rst :setl inde=
 
 
 
