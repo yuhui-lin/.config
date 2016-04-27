@@ -18,6 +18,10 @@ autocmd BufEnter *.rst exe 'noremap <F5> :Riv2HtmlAndBrowse<CR>'
 " shortcut for toggle all folding
 autocmd FileType rst map <leader>o <C-E><Space>a
 
+" disable stupid indent
+" autocmd FileType rst :setl noai nocin nosi inde=
+autocmd FileType rst :setl nocin nosi inde=
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -58,7 +62,7 @@ let g:autopep8_max_line_length=79
 " autocmd BufReadPre *.py :EditorConfig '~/.dotfiles/vimrc.local/.editorconfig'
 " autocmd FileType python,clojure,vim :EditorConfig g:VIMRC_LOCAL 
 " autocmd FileType python,clojure,vim :EditorConfig /Users/yuhuilin/.dotfiles/vimrc.local
-autocmd FileType python,clojure,vim execute ":EditorConfig ".g:VIMRC_LOCAL 
+autocmd FileType python,clojure,vim,rst execute ":EditorConfig ".g:VIMRC_LOCAL 
 
 
 
