@@ -61,3 +61,6 @@ jordwalke/flatlandia:Vim colorscheme based on flatland with Airline integration.
 KabbAmine/yowish.vim: Yowish is a vim dark theme similar to outlander,with some yellow in it
 
 
+# attention
+- markdown: don't put too much stuff in code block. it'll cause folding
+error. just use normal text.
