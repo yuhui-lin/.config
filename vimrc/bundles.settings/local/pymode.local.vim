@@ -19,7 +19,7 @@ function! StartPymode()
       " this three is the default of pymode.
       let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
     endif
-    let g:pymode_lint_ignore = 'C0111,D100,D101,D102,D103,D205,C0301,E501,R0914'
+    let g:pymode_lint_ignore = 'C0111,D100,D101,D102,D103,D205,C0301,E501,R0914,C901,E0602'
     let g:pymode_lint_sort = ['E', 'C', 'W', 'R', 'I', 'F', 'D']
     let g:pymode_lint_unmodified = 1
 

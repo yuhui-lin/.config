@@ -40,6 +40,7 @@ todo
   autocmd to py,clj,vim
 - clojure: split rainbow, set clj <F5> to run clojure single file. use
   fireplace.vim plugin.
+- markdown folding: nips-paper, too much text cause folding error??
 
 colorscheme
 ===========
