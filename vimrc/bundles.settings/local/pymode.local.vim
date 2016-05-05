@@ -1,6 +1,10 @@
 " copied from contrib because the flake8 error
 
 function! StartPymode()
+    " let g:pymode_python = 'python'
+    " ??? <leader>r still use python, even set to 3
+    let g:pymode_python = 'python3'
+
     let g:pymode_virtualenv=1 " Auto fix vim python paths if virtualenv enabled        
     let g:pymode_folding=1  " Enable python folding 
     let g:pymode_rope = 0

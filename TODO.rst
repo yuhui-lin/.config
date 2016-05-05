@@ -40,6 +40,10 @@ todo
   autocmd to py,clj,vim
 - clojure: split rainbow, set clj <F5> to run clojure single file. use
   fireplace.vim plugin.
+- comment: return don't auto comment!
+- comment: won't indent >>
+- python: syntax highlight wrong, argument name
+- md: tab too long
 
 colorscheme
 ===========

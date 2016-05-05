@@ -93,6 +93,8 @@ autocmd FileType python nnoremap <silent> <leader>y :0,$!yapf --style pep8<Cr>
 "noremap <F5> <ESC>:w<CR>:silent execute "!python %"<CR><CR>
 "autocmd FileType python nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 autocmd FileType python nnoremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; python' shellescape(@%, 1)<cr>
+" python3 run
+autocmd FileType python nnoremap <buffer> <F6> <ESC>:w<CR>:exec '!clear; python3' shellescape(@%, 1)<cr>
 
 
 " press f to toggle the current fold open/closed. However, if the cursor is not in a fold, move to the next line
@@ -130,6 +132,7 @@ inoremap <S-Tab> <ESC>la
 
 
 " Don't copy the replacement part to system clipboard.
+vnoremap c "_c
 nnoremap c "_c
 nnoremap cc "_cc
 nnoremap C "_C
