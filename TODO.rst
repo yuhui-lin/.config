@@ -44,6 +44,7 @@ todo
 - comment: won't indent >>
 - python: syntax highlight wrong, argument name
 - md: tab too long
+- markdown folding: nips-paper, too much text cause folding error??
 
 colorscheme
 ===========

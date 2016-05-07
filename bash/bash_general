@@ -49,3 +49,9 @@ else
    fi
 fi
 }
+
+
+### virtualenvwrapper
+export WORKON_HOME=$HOME/work/py-envs
+# export PROJECT_HOME=$HOME/work
+source /usr/local/bin/virtualenvwrapper.sh
