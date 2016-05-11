@@ -45,6 +45,8 @@ todo
 - python: syntax highlight wrong, argument name
 - md: tab too long
 - markdown folding: nips-paper, too much text cause folding error??
+- clojure wrapping: take a look at jiangmiao/auto-pairs, guns/vim-sexp,
+tpope/vim-sexp-mappings-for-regular-people, vim-scripts/paredit.vim.
 
 colorscheme
 ===========

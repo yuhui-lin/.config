@@ -28,6 +28,8 @@ alias v='/Applications/MacVim.app/Contents/MacOS/Vim'
 # print prompt before overwritting
 alias mv='mv -i'
 alias cp='cp -i'
+# brew install trash, don't use rm anymore
+alias del='trash'
 
 ###set system editor variable
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim

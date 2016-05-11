@@ -81,7 +81,10 @@ For original keymappings, please refre to [Tony/Keymappings](https://github.com/
 |``<S-Tab>`` |all |insert mode: jump one character |
 |``f, F, ;`` |all |sneak: qick move |
 |``<leader>m`` |all |maximize current windows, not <C-m> |
-| | | |
+|``<leader>r`` |clojure |map of cpp, evaluate cursor |
+|``<leader>e`` |clojure |map of :Eval, evaluate cursor |
+|``F6`` |clojure |evaluate entire clojure |
+|``cpr`` |clojure |require one line |
 | | | |
 
 # My modifications to tony/vim-config-framework
