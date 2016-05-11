@@ -25,6 +25,9 @@ export LSCOLORS=HxFxBxDxCxegedabagacad
 ### mac alias
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias v='/Applications/MacVim.app/Contents/MacOS/Vim'
+# print prompt before overwritting
+alias mv='mv -i'
+alias cp='cp -i'
 
 ###set system editor variable
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim

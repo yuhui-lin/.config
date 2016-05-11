@@ -94,6 +94,7 @@ modified by Yuhui
 - ``.vimrc``: call function to source all local .vim files
 - ``settings``, ``bundles.settings``, ``bundles.d``: add ``local/`` folder under these directories. ``local/`` folders contain my .vim config files which can be used in the same way as ``contrib/`` community settings.
 - ``.gitignore``: comment out three /*.vim to upload my symbolic links
+- ``settings/contrib/keymappings.vim``: comment out lin 235: map <leader>r to jedi#renmae.
 
 
 # Potential plugins

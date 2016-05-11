@@ -232,5 +232,5 @@ inoremap <C-U> <C-G>u<C-U>
 
 "inoremap <silent> <buffer> <C-N> <c-x><c-o>
 " Use <localleader>r (by default <\-r>) for renaming
-nnoremap <silent> <buffer> <localleader>r :call jedi#rename()<cr>
+" nnoremap <silent> <buffer> <localleader>r :call jedi#rename()<cr>
 " etc.
