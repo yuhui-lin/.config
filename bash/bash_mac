@@ -30,6 +30,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 # brew install trash, don't use rm anymore
 alias del='trash'
+alias rm='echo Error: Use \"del\" command instead, OR use /bin/rm'
 
 ###set system editor variable
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
