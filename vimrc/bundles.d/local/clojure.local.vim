@@ -1,4 +1,4 @@
-if executable('java')
+if executable('java') && (executable('lein') || executable('boot'))
 
     Plug 'tpope/vim-fireplace', {
       \ 'for': ['clojure']

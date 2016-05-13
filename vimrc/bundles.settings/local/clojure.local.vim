@@ -1,4 +1,5 @@
 function! StartFireplace()
+    " run/evaluate clojure
     autocmd FileType clojure noremap <buffer> <F5> <ESC>:w<CR>:exec '!clear; clj' shellescape(@%, 1)<cr>
     autocmd FileType clojure noremap <buffer> <F6> :%Eval<CR>
     autocmd FileType clojure nmap <leader>r cpp

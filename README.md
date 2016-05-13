@@ -5,6 +5,8 @@ This repository keeps all my dotfiles.
 ```bash
 git clone https://github.com/yuhui-lin/.dotfiles.git ~/.dotfiles
 cp ~/.dotfiles/.vimrc ~/.vimrc
+# inside vim, install plugins
+:PlugUpdate
 
 # backup .vim
 mv .vim .vim-backup
@@ -39,3 +41,6 @@ cp ~/.dotfiles/.vimrc.basic ~/.vimrc
 
 ``misc/``: miscellaneous stuff.
 
+# Note
+- use terminal.app under Mac, use Terminator in Linux. iTerm for advanced features under mac.
+- vim cursor cannot change shape between different mode in Terminal.app. iTerm could.

@@ -6,9 +6,9 @@ function! StartRainbowParens()
     " au Syntax * RainbowParenthesesLoadBraces
     " }}}
     
-    " the following cmmand cannot work...
+    " the following cmmand =1 cannot work...
     " use autocmd to start rainbow in clojure manually!
-    let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+    let g:rainbow_active = 0 "0 if you want to enable it later via :RainbowToggle
 
     let g:rainbow_conf = {
 	\   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
@@ -29,6 +29,10 @@ function! StartRainbowParens()
 	\       'css': 0,
 	\   }
 	\}
+
+    " only enable rainbow for clj and html
+    autocmd BufReadPost *.clj,*.html :RainbowToggle
+
 endfunction
 
 " autocmd! User rainbow call StartRainbowParens()

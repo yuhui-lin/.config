@@ -60,6 +60,10 @@ if ColorSchemeExists('molokai')
     " 67 or 68
     hi FoldColumn      ctermfg=68  ctermbg=16
     hi Folded          ctermfg=68  ctermbg=16
+
+    " 208 is similat to terminal cursor color.
+    " hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+    hi MatchParen      ctermfg=233  ctermbg=158 cterm=bold
   endif
 
 else
