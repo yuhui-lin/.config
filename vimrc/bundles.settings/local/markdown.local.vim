@@ -17,11 +17,15 @@ function! StartMarkdown()
     """""""""""""""""""""""""""""""""""""""""""""
     " general vim markdown config
     """""""""""""""""""""""""""""""""""""""""""""
-    " Open markdown files with Chrome.
-    " autocmd BufEnter *.md exe 'noremap <F5> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>'
+    " 3. Open markdown files with Chrome markdown plugin, unsually diable
+    " plugin
+    " autocmd BufEnter *.md exe 'noremap <F4> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>'
+    " 1. github parser
     " autocmd BufEnter *.md exe 'noremap <F5> :!github-markup %:p > /tmp/%.html<CR>:! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /tmp/%.html<CR>'
-    " another version: rtfd/CommonMark-py
-    autocmd BufEnter *.md exe 'noremap <F5> :!cmark.py %:p -o /tmp/%.html<CR>:! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /tmp/%.html<CR>'
+    " 2. another version: rtfd/CommonMark-py
+    autocmd BufEnter *.md exe 'noremap <F6> :!cmark.py %:p -o /tmp/%.html<CR>:! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /tmp/%.html<CR>'
+    "4. github redcarpet
+    autocmd BufEnter *.md exe 'noremap <F5> :!redcarpet --parse tables --parse fenced_code_blocks --parse autolink --parse disable_indented_code_blocks --parse strikethrough --parse lax_spacing --parse superscript --parse underline --parse highlight --parse quote --parse footnotes --render prettify %:p > /tmp/%.html<CR>:! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome /tmp/%.html<CR>'
 
     " map for fold and unfold all
     autocmd Filetype markdown noremap <leader>o zR

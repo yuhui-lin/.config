@@ -108,6 +108,13 @@ autocmd FileType python,markdown nnoremap <silent> <CR> @=(foldlevel('.')?'za':'
 " autocmd FileType python,markdown nnoremap <CR> za
 
 
+" disable automatic comment insertion when return
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Restoring indent after typing hash, for python comment
+autocmd FileType python setlocal cindent cinkeys-=0# indentkeys-=0#
+
+
+
 " maximize a windows
 " when <CR> is mapped for folding, <C-m> serves as <CR>
 " cannot use <C-m> anymore.

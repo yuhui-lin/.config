@@ -22,7 +22,7 @@ cp ~/.dotfiles/.vimrc.basic ~/.vimrc
 
 # Prerequisite
 
-- github-markdown parser OR commanMark python implement
+- github redcarpet for markdown
 - rst2html: see Note_rst
 - yaph: pip install yaph 
 - jedi: pip install jedi

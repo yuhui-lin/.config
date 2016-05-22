@@ -34,14 +34,14 @@ todo
 - hl pymode folding font
 - [o] remove vim-flake8
 - [o] fix py string to long problem, can only do this manually
-- don't use editorconfig/editorconfig-vim, it needs to install
+- [o] don't use editorconfig/editorconfig-vim, it needs to install
   editorconfig-core-c binary. use dahu/EditorConfig which in VimL but in
   alpha version, not stable. add my EditorConfig under vinrc.local. set
   autocmd to py,clj,vim
-- clojure: split rainbow, set clj <F5> to run clojure single file. use
+- [o] clojure: split rainbow, set clj <F5> to run clojure single file. use
   fireplace.vim plugin.
-- comment: return don't auto comment!
-- comment: won't indent >>
+- [o] comment: return don't auto comment!
+- [o] comment: won't indent >>
 - python: syntax highlight wrong, argument name
 - md: tab too long
 - markdown folding: nips-paper, too much text cause folding error??
