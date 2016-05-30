@@ -1,1 +1,8 @@
 backup/
+
+# add these hidden files when 'git add *'
+!/.gitignore
+!/.bashrc
+!/.bash_profile
+!/.vimrc
+!/.vimrc.basic
