@@ -1,6 +1,12 @@
 root = true
 
 ;.editorconfig
+; this does not work
+[**]
+indent_style = space
+indent_size = 4
+
+
 [**.js,**.jsx]
 bin=node
 indent_style = space

@@ -47,6 +47,7 @@ todo
 - markdown folding: nips-paper, too much text cause folding error??
 - clojure wrapping: take a look at jiangmiao/auto-pairs, guns/vim-sexp,
 tpope/vim-sexp-mappings-for-regular-people, vim-scripts/paredit.vim.
+- [o] change no extension file: change indent to 4 space, not tab
 
 colorscheme
 ===========

@@ -4,7 +4,7 @@
 
 ### import the general config
 # it can be overwritten.
-source ~/.dotfiles/bash/bash_general
+source ~/.dotfiles/bashrc/general.sh
 
 ###only for mbp_start
 # MacPorts Installer addition on 2014-09-11_at_11:23:56: adding an appropriate PATH variable for use with MacPorts.
@@ -34,3 +34,13 @@ alias rm='echo Error: Use \"del\" command instead, OR use /bin/rm'
 
 ###set system editor variable
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+
+### virtualenvwrapper
+if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
+    export WORKON_HOME=$HOME/work/py-envs
+    # export PROJECT_HOME=$HOME/work
+    # this source is slow. use lazy source!
+    # source /usr/local/bin/virtualenvwrapper.sh
+    export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+    source /usr/local/bin/virtualenvwrapper_lazy.sh
+fi

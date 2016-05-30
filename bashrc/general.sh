@@ -7,7 +7,7 @@
 PS1='\[\e[31;47m\]\u:\w$\[\e[m\] '
 
 ### import general alias
-source ~/.dotfiles/bash/bash_alias
+source ~/.dotfiles/bashrc/alias.sh
 
 ### command case insensitive
 bind "set completion-ignore-case on"
@@ -51,7 +51,3 @@ fi
 }
 
 
-### virtualenvwrapper
-export WORKON_HOME=$HOME/work/py-envs
-# export PROJECT_HOME=$HOME/work
-source /usr/local/bin/virtualenvwrapper.sh
