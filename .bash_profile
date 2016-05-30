@@ -8,7 +8,7 @@
 
 ### import the general config
 # it can be overwritten.
-source ~/.dotfiles/bash/bash_mac
+source ~/.dotfiles/bashrc/mac.sh
 
 ###colorful prompt
 # overwrite @iMac
