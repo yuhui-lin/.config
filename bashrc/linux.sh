@@ -20,7 +20,11 @@ if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
     # export PROJECT_HOME=$HOME/work
     # this source is slow. use lazy source!
     # source /usr/local/bin/virtualenvwrapper.sh
-    export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
-    source /usr/local/bin/virtualenvwrapper_lazy.sh
+    # it's under /usr/bin/, for root user
+    # source virtualenvwrapper.sh
+    # don't export script for root user
+    # export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+    # # source /usr/local/bin/virtualenvwrapper_lazy.sh
+    source virtualenvwrapper_lazy.sh
 fi
 
