@@ -9,5 +9,14 @@ if executable('java') && (executable('lein') || executable('boot'))
     "   \ 'for': ['clojure']
     "   \ }
 
+    " these two sexp plugins should be together!
+    " tutorials see bookmark cheat sheet
+    Plug 'guns/vim-sexp', {
+      \ 'for': ['clojure']
+      \ }
+
+    Plug 'tpope/vim-sexp-mappings-for-regular-people', {
+      \ 'for': ['clojure']
+      \ }
 endif
 
