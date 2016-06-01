@@ -6,6 +6,9 @@
 ### Mac only - .bash_profile
 ######################################
 
+# do not use cp ~/.dotfiles/ to replace this file!!!
+# since there may be costumized settings!
+
 ### import the general config
 # it can be overwritten.
 source ~/.dotfiles/bashrc/mac.sh

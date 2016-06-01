@@ -37,3 +37,11 @@ alias clj='java -cp ~/Downloads/clojure-?.?.?/clojure-?.?.?.jar clojure.main'
 alias py3='python3'
 alias py='python'
 
+### conda env
+# conda path is specified in .bashrc !
+if hash pip 2>/dev/null; then
+    alias clis='conda env list'
+    alias cact='source activate'
+    alias cdea='source deactivate'
+fi
+
