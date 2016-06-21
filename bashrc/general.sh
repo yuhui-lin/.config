@@ -51,3 +51,13 @@ fi
 }
 
 
+### virtualenvwrapper
+if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
+    export WORKON_HOME=$HOME/work/py-envs
+    # export PROJECT_HOME=$HOME/work
+    # this source is slow. use lazy source!
+    # source /usr/local/bin/virtualenvwrapper.sh
+    # export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+    source /usr/local/bin/virtualenvwrapper_lazy.sh
+fi
+
