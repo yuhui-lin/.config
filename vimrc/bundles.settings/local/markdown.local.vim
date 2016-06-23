@@ -3,13 +3,15 @@ function! StartMarkdown()
     "configuration for plasticboy/vim-markdown
     """""""""""""""""""""""""""""""""""""""""""""
     " let g:vim_markdown_folding_disabled = 1
-    "
-    " " this diable the folding_level
-    " " let g:vim_markdown_folding_style_pythonic = 1
+    " set foldenable
+    " "
+    " " " this diable the folding_level
+    " python style looks better
+    let g:vim_markdown_folding_style_pythonic = 1
     "
     " "Folding level is a number between 1 and 6. By default, if not specified, it
     " "is set to 1.
-    " let g:vim_markdown_folding_level = 3
+    let g:vim_markdown_folding_level = 1
     "
     " let g:vim_markdown_no_default_key_mappings = 1
 

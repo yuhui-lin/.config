@@ -1,1 +1,0 @@
-contrib/vim-markdown-folding.vim
