@@ -49,6 +49,8 @@ todo
 tpope/vim-sexp-mappings-for-regular-people, vim-scripts/paredit.vim.
 - [o] change no extension file: change indent to 4 space, not tab
 - add shortcut to insert date or time
+- md folding: indent, toggle all, toggle current all level, toggle one
+level, toggle N level
 
 colorscheme
 ===========
