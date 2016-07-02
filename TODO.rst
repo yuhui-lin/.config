@@ -48,11 +48,9 @@ todo
 - clojure wrapping: take a look at jiangmiao/auto-pairs, guns/vim-sexp,
 tpope/vim-sexp-mappings-for-regular-people, vim-scripts/paredit.vim.
 - [o] change no extension file: change indent to 4 space, not tab
-<<<<<<< HEAD
 - add shortcut to insert date or time
 - md folding: indent, toggle all, toggle current all level, toggle one
 level, toggle N level
-=======
 - markdown: mimic rst features to markdown, moving all notes to md.
     - before this, stick rst with notes !!!!
     A. markdown or all: add shortcut to insert date or time
@@ -61,11 +59,9 @@ level, toggle N level
     A. markdown: highlight code block comment
     B. learn vimscript! support lua, python!
 - rst: heading indent? space line between folding?? 
-- todo: use vitalk/vim-simple-todo plugin, combine rst and todo.txt
+- [X] 2016-07-02 todo: use vitalk/vim-simple-todo plugin, combine rst and todo.txt
 format! add more convenient shortcuts!
 
-
->>>>>>> a9acffe208e015f30b8e28323a65e473037e2e1f
 
 colorscheme
 ===========

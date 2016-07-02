@@ -22,6 +22,9 @@ autocmd FileType rst map <leader>o <C-E><Space>a
 " autocmd FileType rst :setl noai nocin nosi inde=
 autocmd FileType rst :setl inde=
 
+" autocmd FileType rst nnoremap <leader>w <C-E>EE
+" let g:riv_global_leader=<Leader>
+map <leader>e :RivTodoToggle<CR>
 
 
 
