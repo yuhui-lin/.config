@@ -2,10 +2,6 @@
 ### Mac only - .bash_profile
 ######################################
 
-### import the general config
-# it can be overwritten.
-source ~/.dotfiles/bashrc/general.sh
-
 ###only for mbp_start
 # MacPorts Installer addition on 2014-09-11_at_11:23:56: adding an appropriate PATH variable for use with MacPorts.
 #export PATH="/opt/local/bin:/opt/local/sbin:$PATH"

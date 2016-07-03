@@ -2,17 +2,14 @@
 ### Linux only - .bashrc
 ######################################
 
-### import the general config
-# it can be overwritten.
-source ~/.dotfiles/bashrc/general.sh
-
+### linux alias
 alias ls='ls --color=auto'
 alias ll='ls -Alh --color=auto'
 alias la='ls -A --color=auto'
 alias llg='ls -Alh --color=auto | grep -i'
 alias sl='less -im /var/log/messages'
 
-# virtualenvwrapper
+### virtualenvwrapper
 if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
     # export WORKON_HOME=$HOME/work/py-envs
     export WORKON_HOME=$HOME/.virtualenvs

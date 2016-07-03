@@ -1,20 +1,4 @@
-######################################
-### general configurations
-### created by: Yuhui Lin
-######################################
-
-### colorful prompt
-PS1='\[\e[31;47m\]\u:\w$\[\e[m\] '
-
-### import general alias
-source ~/.dotfiles/bashrc/alias.sh
-
-### command case insensitive
-bind "set completion-ignore-case on"
-bind "set show-all-if-ambiguous on"
-
-### set Vi mode in bash
-set -o vi
+# this file keeps all handy functions
 
 #### extract function
 ## the if statement cause error
@@ -49,15 +33,3 @@ else
    fi
 fi
 }
-
-
-### virtualenvwrapper
-if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
-    export WORKON_HOME=$HOME/work/py-envs
-    # export PROJECT_HOME=$HOME/work
-    # this source is slow. use lazy source!
-    # source /usr/local/bin/virtualenvwrapper.sh
-    # export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
-    source /usr/local/bin/virtualenvwrapper_lazy.sh
-fi
-
