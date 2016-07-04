@@ -24,7 +24,10 @@ autocmd FileType rst :setl inde=
 
 " autocmd FileType rst nnoremap <leader>w <C-E>EE
 " let g:riv_global_leader=<Leader>
-map <leader>e :RivTodoToggle<CR>
+autocmd FileType rst map <leader>t :RivTodoToggle<CR>
+autocmd FileType rst map <leader>e1 :RivTodoToggle<CR>
+autocmd FileType rst map <leader>e2 :RivTodoToggle<CR>:RivTodoToggle<CR>
+autocmd FileType rst map <leader>e3 :RivTodoToggle<CR>:RivTodoToggle<CR>:RivTodoToggle<CR>
 
 
 
