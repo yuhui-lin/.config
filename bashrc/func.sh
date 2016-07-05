@@ -33,3 +33,39 @@ else
    fi
 fi
 }
+
+
+### conda shortcuts
+# conda path is specified in .bashrc!, don't check conda directly
+if hash pip 2>/dev/null; then
+    function if_conda {
+        if hash conda 2>/dev/null; then 
+            $@
+        else 
+            echo "error: cannot found 'conda'"; 
+        fi
+    }
+    alias clis='if_conda conda env list'
+    alias cact='if_conda source activate'
+    alias cdea='if_conda source deactivate'
+fi
+
+### conda
+# make `which python` shows correct conda py
+# this variable can be overwritten in local bashrc
+CONDA_PATH=$HOME'/work/miniconda3/bin'
+function condaenv {
+    if ! hash conda 2>/dev/null; then
+        if [ -d $CONDA_PATH ] ; then
+            # alias getconda='export PATH="$CONDA_PATH:$PATH" && echo "enable conda at $CONDA_PATH"'
+            # alias anaconda='export PATH="~/work/anaconda3/bin:$PATH" && echo "enable anaconda"'
+            export PATH="$CONDA_PATH:$PATH" 
+            echo "enable conda at $CONDA_PATH"
+        else
+            echo "error: CONDA_PATH doesn't exits: $CONDA_PATH"
+        fi
+    else
+        echo "conda command already exists, do nothing"
+    fi
+}
+

@@ -2,6 +2,7 @@
 ### general configurations
 ### created by: Yuhui Lin
 ######################################
+# this script using sh, not bash!
 
 ### colorful prompt
 PS1='\[\e[31;47m\]\u:\w$\[\e[m\] '
@@ -17,6 +18,9 @@ bind "set show-all-if-ambiguous on"
 
 ### set Vi mode in bash
 set -o vi
+
+
+
 
 ### import platform specific configurations
 # above general conf can be overwritten by following conf.

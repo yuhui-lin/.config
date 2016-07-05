@@ -31,12 +31,3 @@ alias rm='echo Error: Use \"del\" command instead, OR use /bin/rm'
 ###set system editor variable
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
-### conda
-# set conds path
-# if not conda, set enable command, echo and set cact alias
-# if conda, set cact alis
-# make `which python` shows correct conda py
-if ! hash conda 2>/dev/null; then
-    alias miniconda='export PATH="~/work/miniconda3/bin:$PATH" && echo "enable miniconda"'
-    alias anaconda='export PATH="~/work/anaconda3/bin:$PATH" && echo "enable anaconda"'
-fi
