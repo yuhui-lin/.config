@@ -31,3 +31,10 @@ alias rm='echo Error: Use \"del\" command instead, OR use /bin/rm'
 ###set system editor variable
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
+### virtualenvwrapper: overwrite env directory
+if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
+    export WORKON_HOME=$HOME/work/py-envs/
+fi
+
+
+

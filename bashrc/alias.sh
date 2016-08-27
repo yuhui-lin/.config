@@ -37,3 +37,18 @@ alias clj='java -cp ~/Downloads/clojure-?.?.?/clojure-?.?.?.jar clojure.main'
 alias py3='python3'
 alias py='python'
 
+
+### conda shortcuts
+# conda path is specified in .bashrc!, don't check conda directly
+if hash pip 2>/dev/null; then
+    function if_conda {
+        if hash conda 2>/dev/null; then 
+            $@
+        else 
+            echo "error: cannot found 'conda'"; 
+        fi
+    }
+    alias clis='if_conda conda env list'
+    alias cact='if_conda source activate'
+    alias cdea='if_conda source deactivate'
+fi

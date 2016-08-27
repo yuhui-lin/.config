@@ -19,6 +19,9 @@ bind "set show-all-if-ambiguous on"
 ### set Vi mode in bash
 set -o vi
 
+### virtualenvwrapper
+# By default, vew is enabled, conda is not.
+enable-vew
 
 
 

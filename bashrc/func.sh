@@ -35,22 +35,9 @@ fi
 }
 
 
-### conda shortcuts
-# conda path is specified in .bashrc!, don't check conda directly
-if hash pip 2>/dev/null; then
-    function if_conda {
-        if hash conda 2>/dev/null; then 
-            $@
-        else 
-            echo "error: cannot found 'conda'"; 
-        fi
-    }
-    alias clis='if_conda conda env list'
-    alias cact='if_conda source activate'
-    alias cdea='if_conda source deactivate'
-fi
 
 ### conda
+# enable conda environment by calling 'condaenv'
 # make `which python` shows correct conda py
 # this variable can be overwritten in local bashrc
 CONDA_PATH=$HOME'/work/miniconda3/bin'
@@ -69,3 +56,23 @@ function condaenv {
     fi
 }
 
+
+
+### virtualenvwrapper
+function enable-vew {
+    if hash virtualenvwrapper_lazy.sh 2>/dev/null; then
+        # default py env directory, specified in different OS.sh
+        export WORKON_HOME=$HOME/.virtualenvs
+        source virtualenvwrapper_lazy.sh
+
+        # export WORKON_HOME=$HOME/work/py-envs
+        # export PROJECT_HOME=$HOME/work
+        # this source is slow. use lazy source!
+        # source /usr/local/bin/virtualenvwrapper.sh
+        # it's under /usr/bin/, for root user
+        # source virtualenvwrapper.sh
+        # don't export script for root user
+        # export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+        # # source /usr/local/bin/virtualenvwrapper_lazy.sh
+    fi
+}
