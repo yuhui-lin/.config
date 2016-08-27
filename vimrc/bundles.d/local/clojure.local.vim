@@ -18,5 +18,16 @@ if executable('java') && (executable('lein') || executable('boot'))
     Plug 'tpope/vim-sexp-mappings-for-regular-people', {
       \ 'for': ['clojure']
       \ }
+
+    " " clojure formatter
+    " Plug 'venantius/vim-cljfmt', {
+    "   \ 'for': ['clojure']
+    "   \ }
+    "
+    " " plugin for Eastwood (lint tool)
+    " Plug 'venantius/vim-eastwood', {
+    "   \ 'for': ['clojure']
+    "   \ }
+
 endif
 

@@ -61,6 +61,8 @@ level, toggle N level
 - rst: heading indent? space line between folding?? 
 - [X] 2016-07-02 todo: use vitalk/vim-simple-todo plugin, combine rst and todo.txt
 format! add more convenient shortcuts!
+- clojure: try vim-cljfmt and vim-eastwood, failed to install lein
+plugins...formater and linter, not necessary right now
 
 
 colorscheme
