@@ -37,6 +37,9 @@ alias clj='java -cp ~/Downloads/clojure-?.?.?/clojure-?.?.?.jar clojure.main'
 alias py3='python3'
 alias py='python'
 
+# tensorFlow
+alias tsbd='tensorboard --logdir'
+
 
 ### conda shortcuts
 # conda path is specified in .bashrc!, don't check conda directly
