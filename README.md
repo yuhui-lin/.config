@@ -3,21 +3,27 @@ This repository keeps all my dotfiles.
 # Install
 
 ```bash
-git clone https://github.com/yuhui-lin/.dotfiles.git ~/.dotfiles
-cp ~/.dotfiles/.vimrc ~/.vimrc
+mv .config .config-tmp
+git clone https://github.com/yuhui-lin/.config.git
+mv .config-tmp/* .config/
+rm -rf .config-tmp/
+
+# non-neovim:
+cp ~/.config/dotfiles/.vimrc ~/.vimrc
 # inside vim, install plugins
 :PlugUpdate
-
 # backup .vim
 mv .vim .vim-backup
-ln -s ~/.dotfiles/vimrc/ ~/.vim
-# Mac
-cp ~/.dotfiles/.bash_profile ~/.bash_profile
-# Linux
-cp ~/.dotfiles/.bashrc ~/.bashrc
-
+ln -s ~/.config/vimrc/ ~/.vim
 # vimrc.basic
-cp ~/.dotfiles/.vimrc.basic ~/.vimrc
+cp ~/.config/dotfiles/.vimrc.basic ~/.vimrc
+
+## bashrc:
+# Mac
+cp ~/.config/dotfiles/.bash_profile ~/.bash_profile
+# Linux
+cp ~/.config/dotfiles/.bashrc ~/.bashrc
+
 ```
 
 # Prerequisite

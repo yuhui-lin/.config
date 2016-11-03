@@ -67,7 +67,7 @@ endfunction
 " added by Yuhui
 """"""""""""""""""""""""""""
 " Use local vimrc folder if available {
-    call SourceIfExists("~/.dotfiles/vimrc.local/before.vim")
+    call SourceIfExists("~/.config/vimrc.local/before.vim")
 " }
 """"""""""""""""""""""""""""
 " added by Yuhui

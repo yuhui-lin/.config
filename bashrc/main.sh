@@ -24,6 +24,10 @@ set -o vi
 enable-vew
 
 
+### configurations home, for neovim/bashrc/...
+XDG_CONFIG_HOME="~/.config"
+
+
 
 ### import platform specific configurations
 # above general conf can be overwritten by following conf.

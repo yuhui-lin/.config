@@ -1,2 +1,20 @@
-**/.DS_Store
-backup/
+# Ignore everything
+*
+
+# But not these files...
+!.git
+!.gitignore
+!README.md
+!TODO.rst
+!bashrc/
+!dotfiles/
+!misc/
+!ssh/
+!vimrc/
+!vimrc.local/
+!nvim/
+
+
+
+#**/.DS_Store
+#backup/
