@@ -7,12 +7,12 @@
 !README.md
 !TODO.rst
 !bashrc/
-!dotfiles/
+!dotfiles/*
 !misc/
 !ssh/
 !vimrc/
 !vimrc.local/
-!nvim/
+!nvim/*
 
 
 
