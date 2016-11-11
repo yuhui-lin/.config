@@ -1,5 +1,6 @@
 # Ignore everything
 *
+**/.DS_Store
 
 # But not these files...
 !.git
@@ -10,11 +11,10 @@
 !dotfiles/*
 !misc/
 !ssh/
-!vimrc/
+!vimrc/**
 !vimrc.local/
-!nvim/*
+!nvim/**
 
+!*/
 
-
-#**/.DS_Store
 #backup/

@@ -7,10 +7,16 @@
 ### colorful prompt
 PS1='\[\e[31;47m\]\u:\w$\[\e[m\] '
 
+### configurations home, for neovim/bashrc/...
+XDG_CONFIG_HOME="~/.config"
+
+### config dir
+MY_CONFIG_DIR=~/.config
+
 ### import general alias
-source ~/.dotfiles/bashrc/alias.sh
+source $MY_CONFIG_DIR/bashrc/alias.sh
 ### import general functions
-source ~/.dotfiles/bashrc/func.sh
+source $MY_CONFIG_DIR/bashrc/func.sh
 
 ### command case insensitive
 bind "set completion-ignore-case on"
@@ -24,19 +30,15 @@ set -o vi
 enable-vew
 
 
-### configurations home, for neovim/bashrc/...
-XDG_CONFIG_HOME="~/.config"
-
-
 
 ### import platform specific configurations
 # above general conf can be overwritten by following conf.
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # linux distibution
-    source ~/.dotfiles/bashrc/linux.sh
+    source $MY_CONFIG_DIR/bashrc/linux.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
-    source ~/.dotfiles/bashrc/mac.sh
+    source $MY_CONFIG_DIR/bashrc/mac.sh
 elif [[ "$OSTYPE" == "cygwin" ]]; then
     # POSIX compatibility layer and Linux environment emulation for Windows
     echo "cannot import platform specific conf: ", $OSTYPE

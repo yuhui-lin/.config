@@ -94,7 +94,7 @@ Any modifications will be surrounded by
 modified by Yuhui
 """"""""""""""""""""""
 ```
-- ``.vimrc``: call function to source all local .vim files
+- ``.vimrc``: call function to source all local .vim files, and set variables.
 - ``settings``, ``bundles.settings``, ``bundles.d``: add ``local/`` folder under these directories. ``local/`` folders contain my .vim config files which can be used in the same way as ``contrib/`` community settings.
 - ``.gitignore``: comment out three /*.vim to upload my symbolic links
 - ``settings/contrib/keymappings.vim``: comment out lin 235: map <leader>r to jedi#renmae.
@@ -119,3 +119,5 @@ modified by Yuhui
 - sleuth.vim: This plugin automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file.
 - vim-multiple-cursors.vim: sublime stuff, no import, only config.
 
+## debug some plugins
+go to ``vimrc.local/before.vim``, specify plugins in ``b:plugins``.

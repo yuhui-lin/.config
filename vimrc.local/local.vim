@@ -1,11 +1,7 @@
 " My supplement vim configurations to tony/vim-config-framework.
 
-" my global variables
-let g:VIMRC_LOCAL   = $HOME.'/.dotfiles/vimrc.local'
-
-
 " source local plugins config
-source ~/.dotfiles/vimrc.local/plugins.vim
+exe 'source' g:VIMRC_LOCAL.'/plugins.vim'
 
 
 "#########################################
@@ -15,7 +11,7 @@ source ~/.dotfiles/vimrc.local/plugins.vim
 set nu
 
 "enable alias in vim
-let $BASH_ENV="~/.dotfiles/bash/bash_alias"
+let $BASH_ENV = g:MY_CONFIG_DIR."/bash/bash_alias"
 
 "diable beep and flash
 set noerrorbells visualbell t_vb=
@@ -179,4 +175,4 @@ nnoremap C "_C
 
 " source local test config
 " only for testing, should be emmpty otherwise.
-source ~/.dotfiles/vimrc.local/test.vim
+exe 'source' g:VIMRC_LOCAL.'/test.vim'
