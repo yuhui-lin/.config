@@ -1,3 +1,8 @@
+todo2
+=====
+- find a way to test certain plugins, g:bundles
+- try different markdown plugins
+
 todo
 ====
 - [o] figure out how to add local pluging settings, like markdown.local

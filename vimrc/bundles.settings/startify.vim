@@ -1,1 +1,0 @@
-contrib/startify.vim

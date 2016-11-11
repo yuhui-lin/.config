@@ -1,1 +1,0 @@
-contrib/echodoc.vim

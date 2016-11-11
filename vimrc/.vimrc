@@ -66,8 +66,17 @@ endfunction
 """"""""""""""""""""""""""""
 " added by Yuhui
 """"""""""""""""""""""""""""
+if !empty($MY_CONFIG_DIR)
+    let g:MY_CONFIG_DIR = $MY_CONFIG_DIR
+else
+    let g:MY_CONFIG_DIR = $HOME.'/.config'
+endif 
+
+" my global variables
+let g:VIMRC_LOCAL = g:MY_CONFIG_DIR.'/vimrc.local'
+
 " Use local vimrc folder if available {
-    call SourceIfExists("~/.config/vimrc.local/before.vim")
+    call SourceIfExists(g:VIMRC_LOCAL."/before.vim")
 " }
 """"""""""""""""""""""""""""
 " added by Yuhui
@@ -83,8 +92,8 @@ if !exists('s:loaded_my_vimrc')
   call SourceDirectory('~/.vim/settings')
 
 
-  call SourceIfExists("~/.vim/bundle_loader.vim")
-  call SourceDirectory('~/.vim/bundles.settings')
+  call SourceIfExists("~/.vim/plugin_loader.vim")
+  call SourceDirectory('~/.vim/plugins.settings')
 endif
 
 
@@ -107,7 +116,7 @@ call SourceIfExists("~/.vim/colors.vim")
 " added by Yuhui
 """"""""""""""""""""""""""""
 " Use local vimrc folder if available {
-    call SourceIfExists("~/.dotfiles/vimrc.local/local.vim")
+    call SourceIfExists(g:VIMRC_LOCAL."/local.vim")
 " }
 """"""""""""""""""""""""""""
 " added by Yuhui

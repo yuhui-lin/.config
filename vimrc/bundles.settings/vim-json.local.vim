@@ -1,1 +1,0 @@
-local/vim-json.local.vim

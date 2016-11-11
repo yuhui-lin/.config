@@ -1,1 +1,0 @@
-local/pymode.local.vim

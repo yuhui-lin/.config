@@ -1,1 +1,0 @@
-contrib/vim-markdown.vim

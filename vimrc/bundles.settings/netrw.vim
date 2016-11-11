@@ -1,1 +1,0 @@
-contrib/netrw.vim

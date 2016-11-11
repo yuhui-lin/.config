@@ -55,3 +55,9 @@ if hash pip 2>/dev/null; then
     alias cact='if_conda source activate'
     alias cdea='if_conda source deactivate'
 fi
+
+# alias for nvim
+if hash nvim 2>/dev/null; then
+    alias nv='nvim'
+fi
+

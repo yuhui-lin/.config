@@ -1,5 +1,6 @@
 # Ignore everything
 *
+**/.DS_Store
 
 # But not these files...
 !.git
@@ -16,5 +17,4 @@
 
 
 
-#**/.DS_Store
 #backup/

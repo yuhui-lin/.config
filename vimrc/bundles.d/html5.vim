@@ -1,1 +1,0 @@
-contrib/html5.vim

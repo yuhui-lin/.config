@@ -1,1 +1,0 @@
-contrib/nerdtree.vim

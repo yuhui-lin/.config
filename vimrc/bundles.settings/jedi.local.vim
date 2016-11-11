@@ -1,1 +1,0 @@
-local/jedi.local.vim

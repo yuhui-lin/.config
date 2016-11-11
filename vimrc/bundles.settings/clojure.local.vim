@@ -1,1 +1,0 @@
-local/clojure.local.vim

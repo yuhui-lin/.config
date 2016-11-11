@@ -61,7 +61,7 @@ let g:autopep8_max_line_length=79
 " autocmd BufReadPre *.py :EditorConfig '~/.dotfiles/vimrc.local/.editorconfig'
 " autocmd FileType python,clojure,vim :EditorConfig g:VIMRC_LOCAL 
 " autocmd FileType python,clojure,vim :EditorConfig /Users/yuhuilin/.dotfiles/vimrc.local
-autocmd FileType python,clojure,vim,rst execute ":EditorConfig ".g:VIMRC_LOCAL 
+autocmd! User EditorConfig autocmd FileType python,clojure,vim,rst execute ":EditorConfig ".g:VIMRC_LOCAL 
 
 
 

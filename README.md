@@ -17,6 +17,8 @@ mv .vim .vim-backup
 ln -s ~/.config/vimrc/ ~/.vim
 # vimrc.basic
 cp ~/.config/dotfiles/.vimrc.basic ~/.vimrc
+# neovim, not necessary, install vim-plug
+ln -s ~/.config/vimrc/autoload/ ~/.config/nvim/autoload
 
 ## bashrc:
 # Mac
