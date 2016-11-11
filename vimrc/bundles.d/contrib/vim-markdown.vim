@@ -4,4 +4,8 @@
 
 " this one looks better than above two combined
 " they have different folding style!
-Plug 'plasticboy/vim-markdown', {'for':['markdown', 'md']}
+" Plug 'plasticboy/vim-markdown', {'for':['markdown', 'md']}
+
+
+" third option:
+Plug 'gabrielelana/vim-markdown', {'for':['markdown', 'md']}
