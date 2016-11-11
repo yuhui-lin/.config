@@ -11,10 +11,10 @@
 !dotfiles/*
 !misc/
 !ssh/
-!vimrc/
+!vimrc/**
 !vimrc.local/
-!nvim/*
+!nvim/**
 
-
+!*/
 
 #backup/
