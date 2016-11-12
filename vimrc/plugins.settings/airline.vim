@@ -1,1 +1,1 @@
-contrib/airline.vim
+contrib/todo/airline.vim

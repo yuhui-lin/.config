@@ -1,7 +1,8 @@
 " My supplement vim configurations to tony/vim-config-framework.
 
 " source local plugins config
-exe 'source' g:VIMRC_LOCAL.'/plugins.vim'
+" don't use this for now
+" exe 'source' g:VIMRC_LOCAL.'/plugins.vim'
 
 
 "#########################################

@@ -27,6 +27,15 @@ function! StartPymode()
     let g:pymode_lint_sort = ['E', 'C', 'W', 'R', 'I', 'F', 'D']
     let g:pymode_lint_unmodified = 1
 
+    """""""""""""""""""""""""""""""""""""""""""""""""""""
+    " autopep8.vim, add lazy loading for this ???
+    """""""""""""""""""""""""""""""""""""""""""""""""""""
+    let g:autopep8_disable_show_diff=1
+    let g:autopep8_aggressive=3
+    "Number of spaces per indent level (default: 4)
+    " let g:autopep8_indent_size=4
+    let g:autopep8_max_line_length=79
+
 endfunction
 
 autocmd! User python-mode call StartPymode()

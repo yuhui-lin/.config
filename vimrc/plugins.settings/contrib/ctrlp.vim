@@ -57,6 +57,20 @@ function! StartCtrlP()
 
   nnoremap <silent> [ctrlp]<space> :<C-u>CtrlPMixed<CR>
   nnoremap <silent> [ctrlp]o :<C-u>CtrlPFunky<CR>
+
+  """""""""""""""""""""""""""""""""""""""""""""""""""""
+  " added by Yuhui
+  """""""""""""""""""""""""""""""""""""""""""""""""""""
+  "Set this to 0 to enable cross-session caching by not deleting the cache files upon exiting Vim: >
+  "use ``F5`` in ctrlp to get new cache!!!!!
+  let g:ctrlp_clear_cache_on_exit = 0
+
+  " it is diabled in framework. why?
+  nnoremap <silent> <space>m :<C-u>CtrlPMRU<CR>
+  """""""""""""""""""""""""""""""""""""""""""""""""""""
+  " added by Yuhui
+  """""""""""""""""""""""""""""""""""""""""""""""""""""
+
 endfunction
 
 call PlugOnLoad('ctrlp.vim', 'call StartCtrlP()')

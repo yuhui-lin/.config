@@ -121,3 +121,12 @@ modified by Yuhui
 
 ## debug some plugins
 go to ``vimrc.local/before.vim``, specify plugins in ``b:plugins``.
+
+## lazily load plugin settings
+```
+# these hooks can be used multiple time
+# option 1, from vim-plug, name should be github repository name
+autocmd! User goyo.vim echom 'Goyo is now loaded!'
+# option 2, from vimrc-framework
+call PlugOnLoad('riv.vim', 'call StartRiv()')
+```

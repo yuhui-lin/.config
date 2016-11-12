@@ -84,16 +84,27 @@ let g:VIMRC_LOCAL = g:MY_CONFIG_DIR.'/vimrc.local'
 
 " Don't reset twice on reloading - 'compatible' has SO many side effects.
 if !exists('s:loaded_my_vimrc')
-  call SourceDirectory('~/.vim/quirks')
 
-  call SourceIfExists("~/.vim/ignore.vim")
-  call SourceIfExists("~/.vim/rice.vim")
+  """"""""""""""""""""""""""""""""""""
+  " added by Yuhui, add if condition
+  """"""""""""""""""""""""""""""""""""
+  if g:enable_settings == 1
+    call SourceDirectory('~/.vim/quirks')
 
-  call SourceDirectory('~/.vim/settings')
+    call SourceIfExists("~/.vim/ignore.vim")
+    call SourceIfExists("~/.vim/rice.vim")
 
+    call SourceDirectory('~/.vim/settings')
+  endif
 
   call SourceIfExists("~/.vim/plugin_loader.vim")
-  call SourceDirectory('~/.vim/plugins.settings')
+
+  """"""""""""""""""""""""""""""""""""
+  " added by Yuhui, add if condition
+  """"""""""""""""""""""""""""""""""""
+  if g:enable_plug_settings == 1
+    call SourceDirectory('~/.vim/plugins.settings')
+  endif
 endif
 
 
@@ -115,9 +126,11 @@ call SourceIfExists("~/.vim/colors.vim")
 """"""""""""""""""""""""""""
 " added by Yuhui
 """"""""""""""""""""""""""""
-" Use local vimrc folder if available {
+  if g:enable_local_vim == 1
+  " Use local vimrc folder if available {
     call SourceIfExists(g:VIMRC_LOCAL."/local.vim")
-" }
+  " }
+endif
 """"""""""""""""""""""""""""
 " added by Yuhui
 """"""""""""""""""""""""""""

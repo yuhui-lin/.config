@@ -1,1 +1,1 @@
-contrib/editorconfig.vim
+local/editorconfig.local.vim

@@ -8,4 +8,5 @@ function! StartTComment()
     endif
 endfunction
 
+autocmd! User tcomment echom 'Goyo is now loaded!'
 call PlugOnLoad('tcomment', 'call StartTComment()')
