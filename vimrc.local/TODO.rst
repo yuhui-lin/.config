@@ -2,6 +2,10 @@ todo2
 =====
 - find a way to test certain plugins, g:bundles
 - try different markdown plugins
+- editorconfig: cannot work, http://stackoverflow.com/questions/5010162/if-existscommand-fails-on-startup-using-pathogen
+- markdown: which one?
+- remove DS_store
+- try neovim plugins really work.
 
 todo
 ====

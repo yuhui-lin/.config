@@ -61,9 +61,9 @@ indent_style = space
 indent_size = 2
 
 
-[**.vim, **.vimrc]
+[**.vim]
 indent_style = space
-indent_size = 8
+indent_size = 10
 
 [**.rst]
 indent_style = space
