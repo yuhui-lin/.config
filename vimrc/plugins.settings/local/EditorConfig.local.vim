@@ -11,7 +11,6 @@ function! StartEditorConfig()
 
     " autocmd FileType python,clojure,vim,rst execute ':EditorConfig ".g:VIMRC_LOCAL 
     execute ":EditorConfig ".g:VIMRC_LOCAL 
-    echo 'haha'
 endfunction
 
 call PlugOnLoad('EditorConfig', 'call StartEditorConfig()')
