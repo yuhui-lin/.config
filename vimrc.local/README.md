@@ -98,6 +98,7 @@ modified by Yuhui
 - ``settings``, ``bundles.settings``, ``bundles.d``: add ``local/`` folder under these directories. ``local/`` folders contain my .vim config files which can be used in the same way as ``contrib/`` community settings.
 - ``.gitignore``: comment out three /*.vim to upload my symbolic links
 - ``settings/contrib/keymappings.vim``: comment out lin 235: map <leader>r to jedi#renmae.
+- ``settings/contrib/autocmd.vim``: diable all autocmd after 'if', use EditorConfig instead.
 
 
 # Potential plugins

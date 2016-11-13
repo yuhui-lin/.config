@@ -12,8 +12,8 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4
 let g:enable_settings = 1
 let g:enable_plug_settings = 1
 let g:enable_local_vim = 1
-"let b:enabled_plugins = ['editorconfig']
-" let b:enabled_plugins  = ['colorscheme.local', 'ctrlp', 'tcomment', 'vim-markdown']
+" let b:enabled_plugins = ['markdown']
+" let b:enabled_plugins  = ['colorscheme.local', 'ctrlp', 'tcomment', 'markdown']
 if exists('b:enabled_plugins ')
     let g:bundles = []
     for plugin in b:enabled_plugins 

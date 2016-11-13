@@ -1,5 +1,5 @@
 if has('nvim')
-    runtime 'contrib/deoplete.vim'
+    exe 'source' g:MY_CONFIG_DIR.'/vimrc/plugins.settings/contrib/deoplete.vim'
 else
-    runtime 'contrib/neocomplete.vim'
+    exe 'source' g:MY_CONFIG_DIR.'/vimrc/plugins.settings/local/neocomplete.local.vim'
 endif
