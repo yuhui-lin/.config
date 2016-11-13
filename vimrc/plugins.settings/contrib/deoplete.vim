@@ -25,6 +25,7 @@ function StartDeoplete()
     let g:deoplete#sources#go = 'vim-go'
 
     inoremap <expr><C-n> deoplete#mappings#manual_complete()
+    echo 'haha'
 endfunction
 
 call PlugOnLoad('deoplete.nvim', 'call StartDeoplete()')
