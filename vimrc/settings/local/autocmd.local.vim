@@ -67,10 +67,7 @@ autocmd FileType less noremap <silent><leader>f :call Preserve("normal gg=G")<CR
       " \ so $MYVIMRC | call Pl#Load() | if has('gui_running') | so $MYGVIMRC | endif
 
 
-" diable all folowing autocmd
-" 1. to enable markdown hightlight
-" 2. use EditorConfig to change format of different language
-if has("autocmd") && 0
+if has("autocmd")
   autocmd BufNewFile,BufRead *.ejs,*.jst setlocal  filetype=html.jst  " https://github.com/briancollins/vim-jst/blob/master/ftdetect/jst.vim
   autocmd BufNewFile,BufRead *.handlebars setlocal  filetype=html.mustache
   autocmd! BufNewFile,BufRead *.js.php,*.json set filetype=javascript

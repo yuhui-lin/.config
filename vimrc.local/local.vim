@@ -29,8 +29,9 @@ endif
 " colorscheme
 " overwrite contrib/color.vim
 " always use molokai, even in terminal
-if ColorSchemeExists('molokai')
+if g:enable_settings == 1 && ColorSchemeExists('molokai')
   colorscheme molokai
+  " colorscheme onedark
   " molokai: for 256 colors
   let g:rehash256 = 1
 
@@ -51,7 +52,7 @@ if ColorSchemeExists('molokai')
     " hi Visual ctermbg=240
     hi Visual ctermbg=29
 
-    " hi Comment ctermfg=243
+    " 243 or 244
     hi Comment ctermfg=244
 
     " 67 or 68
@@ -119,12 +120,19 @@ nnoremap <leader>m <C-W>_
 
 
 " unmap these in keymapping.vim
-" to enable vim-sneak ; operation
+" to enable vim-sneak ';' operation
 " use <leader>[] instead
-:unmap ;[
-" :unmap! ;[
-:unmap ;]
-" :unmap! ;]
+if g:enable_settings == 1
+  :unmap ;[
+  " :unmap! ;[
+  :unmap ;]
+  " :unmap! ;]
+
+  " overwrite keymapping.vim, don't put into blackhole
+  " use <leader>4+v+s to paste
+  " nnoremap d d
+  :unmap d
+endif
 
 " "move to next char in insert mode
 " cannot use c-;
@@ -133,10 +141,6 @@ inoremap <S-Tab> <ESC>la
 " inoremap <C-'> <C-o>a
 
 
-" overwrite keymapping.vim, don't put into blackhole
-" use <leader>4+v+s to paste
-" nnoremap d d
-:unmap d
 
 
 " Don't copy the replacement part to system clipboard.

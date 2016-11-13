@@ -109,4 +109,5 @@ endfunction
 
 if !has('nvim')
   call PlugOnLoad('neocomplete.vim', 'call StartNeocomplete()')
+  call StartNeocomplete()
 endif
