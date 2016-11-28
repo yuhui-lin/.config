@@ -4,8 +4,9 @@ This repository keeps all my dotfiles.
 
 ```bash
 mv .config .config-tmp
-git clone https://github.com/yuhui-lin/.config.git
+git clone https://github.com/yuhui-lin/.config.git .config-tmp
 mv .config-tmp/* .config/
+mv .config-tmp/.* .config/
 rm -rf .config-tmp/
 
 # non-neovim:
