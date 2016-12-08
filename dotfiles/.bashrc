@@ -1,5 +1,6 @@
 ######################################
-### Linux only - .bashrc
+### Linux or Unix - 
+### .bashrc or .bash_profile
 ######################################
 
 # do not use cp ~/.dotfiles/ to replace this file!!!

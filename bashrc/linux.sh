@@ -9,6 +9,9 @@ alias la='ls -A --color=auto'
 alias llg='ls -Alh --color=auto | grep -i'
 alias sl='less -im /var/log/messages'
 
+## change color of director with ls
+export LS_COLORS=$LS_COLORS:'di=1;37:'
+
 # trash
 if hash trash-put 2>/dev/null; then
     alias del='gvfs-trash'
