@@ -15,7 +15,9 @@
 
 
 ### mac colorful ls result
+# http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 export CLICOLOR=1
+# export LSCOLORS=ExFxBxDxCxegedabagacad
 export LSCOLORS=HxFxBxDxCxegedabagacad
 
 ### mac alias
