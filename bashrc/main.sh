@@ -23,7 +23,7 @@ bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
 ### set Vi mode in bash
-set -o vi
+# set -o vi
 
 ### virtualenvwrapper
 # By default, vew is enabled, conda is not.
