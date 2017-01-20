@@ -11,6 +11,9 @@
 "clorscheme desert
 set nu
 
+" set case insensitive when use :e file
+set wildignorecase
+
 "enable alias in vim
 let $BASH_ENV = g:MY_CONFIG_DIR."/bash/bash_alias"
 
