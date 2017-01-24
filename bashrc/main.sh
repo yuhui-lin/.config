@@ -29,6 +29,8 @@ bind "set show-all-if-ambiguous on"
 # By default, vew is enabled, conda is not.
 enable-vew
 
+# svn editor
+SVN_EDITOR=vi
 
 
 ### import platform specific configurations
