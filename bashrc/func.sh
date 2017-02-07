@@ -76,3 +76,10 @@ function enable-vew {
         # # source /usr/local/bin/virtualenvwrapper_lazy.sh
     fi
 }
+
+# git
+function gpush {
+    git add .
+    git commit -m "quick commit"
+    git push
+}
