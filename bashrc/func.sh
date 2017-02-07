@@ -80,6 +80,7 @@ function enable-vew {
 # git
 function gpush {
     git add .
+    git status
     git commit -m "quick commit"
     git push
 }
