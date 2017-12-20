@@ -47,6 +47,9 @@ alias dk='docker'
 alias dkc='docker-compose'
 alias dkcu='docker-compose up -d'
 
+# git
+alias gst='git status'
+
 ### conda shortcuts
 # conda path is specified in .bashrc!, don't check conda directly
 if hash pip 2>/dev/null; then
